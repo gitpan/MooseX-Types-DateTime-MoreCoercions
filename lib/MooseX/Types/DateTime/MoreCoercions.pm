@@ -12,19 +12,19 @@ use MooseX::Types::Moose 0.04 qw/Num HashRef Str/;
 
 use namespace::clean 0.08;
 
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 use MooseX::Types 0.04 -declare => [qw( DateTime Duration)];
 
 subtype DateTime, as MooseX::Types::DateTime::DateTime;
 coerce( DateTime,
-    @{ $MooseX::Types::DateTime::coercions{DateTime} },
+    @{ MooseX::Types::DateTime::DateTime->coercion->type_coercion_map },
     from Str, via { DateTimeX::Easy->new($_) },
 );
 
 subtype Duration, as MooseX::Types::DateTime::Duration;
 coerce( Duration,
-    @{ $MooseX::Types::DateTime::coercions{"DateTime::Duration"} },
+    @{ MooseX::Types::DateTime::Duration->coercion->type_coercion_map },
     from Str, via { 
         DateTime::Duration->new( 
             seconds => parse_duration($_)
@@ -98,7 +98,7 @@ Firstly, this module uses L<DateTimeX::Easy> which is way to more DWIM than any 
 
 John Napiorkowski E<lt>jjn1056 at yahoo.comE<gt>
 
-Broken into a seperate package from L<MooseX::Types::DateTime> by Evan Carroll.
+Broken into a separate package from L<MooseX::Types::DateTime> by Evan Carroll.
 
 Forked from L<MooseX::Types::DateTimeX> and ported back to use
 L<MooseX::Types::DateTime> by Dagfinn Ilmari MannsE<aring>ker
