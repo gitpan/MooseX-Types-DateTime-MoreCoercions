@@ -12,7 +12,7 @@ use MooseX::Types::Moose 0.04 qw/Num HashRef Str/;
 
 use namespace::clean 0.08;
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 use MooseX::Types 0.04 -declare => [qw( DateTime Duration)];
 
@@ -80,7 +80,7 @@ Subtype of L<MooseX::Types::DateTime/Duration> that coerces from a string.  We u
 
 =head1 CAVEATS
 
-Firstly, this module uses L<DateTimeX::Easy> which is way to more DWIM than any sane person would desire. L<DateTimeX::Easy> works by falling back until something makes sense, this is variable. Furthermore, all the modules that L<DateTimeX::Easy> *can* use aren't required for "proper" function of L<DateTimeX::Easy>. What does this mean? Simple, your mileage may vary in your coercions because L<DateTimeX::Easy> is installation specific.
+Firstly, this module uses L<DateTimeX::Easy> which is way more DWIM than any sane person would desire. L<DateTimeX::Easy> works by falling back until something makes sense, this is variable. Furthermore, all the modules that L<DateTimeX::Easy> *can* use aren't required for "proper" function of L<DateTimeX::Easy>. What does this mean? Simple, your mileage may vary in your coercions because L<DateTimeX::Easy> is installation specific.
 
 =head1 SEE ALSO
 
