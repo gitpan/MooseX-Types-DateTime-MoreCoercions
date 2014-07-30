@@ -4,8 +4,8 @@ package MooseX::Types::DateTime::MoreCoercions;
 BEGIN {
   $MooseX::Types::DateTime::MoreCoercions::AUTHORITY = 'cpan:ILMARI';
 }
-# git description: v0.11-10-gf7d77bb
-$MooseX::Types::DateTime::MoreCoercions::VERSION = '0.12';
+# git description: v0.12-1-g531e1a2
+$MooseX::Types::DateTime::MoreCoercions::VERSION = '0.13';
 # ABSTRACT: Extensions to L<MooseX::Types::DateTime>
 # KEYWORDS: moose types constraints coercions date time datetime timestamp
 
@@ -51,7 +51,7 @@ MooseX::Types::DateTime::MoreCoercions - Extensions to L<MooseX::Types::DateTime
 
 =head1 VERSION
 
-version 0.12
+version 0.13
 
 =head1 SYNOPSIS
 
