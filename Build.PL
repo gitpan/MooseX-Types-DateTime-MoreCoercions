@@ -65,7 +65,7 @@ EOW
         "Dagfinn Ilmari Manns\x{e5}ker <ilmari\@ilmari.org>"
       ],
       "dist_name" => "MooseX-Types-DateTime-MoreCoercions",
-      "dist_version" => "0.13",
+      "dist_version" => "0.14",
       "license" => "perl",
       "module_name" => "MooseX::Types::DateTime::MoreCoercions",
       "recommends" => {},
@@ -89,9 +89,6 @@ EOW
       "test_requires" => {
         "ExtUtils::MakeMaker" => 0,
         "File::Spec" => 0,
-        "File::Spec::Functions" => 0,
-        "List::Util" => 0,
-        "Scalar::Util" => 0,
         "Test::Fatal" => 0,
         "Test::More" => 0,
         "ok" => 0
@@ -102,9 +99,6 @@ EOW
     my %fallback_build_requires = (
       "ExtUtils::MakeMaker" => 0,
       "File::Spec" => 0,
-      "File::Spec::Functions" => 0,
-      "List::Util" => 0,
-      "Scalar::Util" => 0,
       "Test::Fatal" => 0,
       "Test::More" => 0,
       "ok" => 0

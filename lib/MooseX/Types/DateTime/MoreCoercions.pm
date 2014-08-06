@@ -4,8 +4,8 @@ package MooseX::Types::DateTime::MoreCoercions;
 BEGIN {
   $MooseX::Types::DateTime::MoreCoercions::AUTHORITY = 'cpan:ILMARI';
 }
-# git description: v0.12-1-g531e1a2
-$MooseX::Types::DateTime::MoreCoercions::VERSION = '0.13';
+# git description: v0.13-2-g38c0d44
+$MooseX::Types::DateTime::MoreCoercions::VERSION = '0.14';
 # ABSTRACT: Extensions to L<MooseX::Types::DateTime>
 # KEYWORDS: moose types constraints coercions date time datetime timestamp
 
@@ -51,7 +51,7 @@ MooseX::Types::DateTime::MoreCoercions - Extensions to L<MooseX::Types::DateTime
 
 =head1 VERSION
 
-version 0.13
+version 0.14
 
 =head1 SYNOPSIS
 
@@ -139,6 +139,8 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =head1 CONTRIBUTORS
+
+=for stopwords Dagfinn Ilmari Mannsåker Evan Carroll Karen Etheridge gregor herrmann root
 
 =over 4
 
